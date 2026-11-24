@@ -39,7 +39,7 @@
 <body>
 
   <h1>Privacy Policy</h1>
-  <p><strong>Last updated:</strong> 2026-09-03</p>
+  <p><strong>Last updated:</strong> 2026-11-24</p>
 
   <h2>Overview</h2>
   <p>
@@ -57,8 +57,13 @@
     <li>Your transactions — income, expenses and savings, including their names, amounts, dates and categories.</li>
     <li>Your fixed costs and your budgets.</li>
     <li>Categories you create, including any you rename.</li>
-    <li>App settings such as theme, language and selected currency.</li>
+    <li>
+      On iPhone, if you turn on automatic Apple Pay logging, the merchant name and amount of
+      each Apple Pay purchase that your Shortcuts automation passes to the App.
+    </li>
+    <li>App settings such as theme, language, selected currency and reminder preferences.</li>
     <li>Results of any AI spending analyses you have run.</li>
+    <li>Whether you currently have Premium.</li>
   </ul>
   <p>
     We do not collect your name, email address, phone number or payment details.
@@ -72,17 +77,35 @@
     <li>
       <strong>AI Money Coach.</strong> When you choose to run an analysis, FullWallet sends
       only aggregate figures for the month in question: your totals for income, fixed
-      costs, expenses, savings and what remains, plus the total spent in each category for
-      that month and the one before it, along with your currency and the month. Individual
-      transactions — their names, dates and amounts — are never sent. These figures are
-      passed through our server to OpenAI, which generates the summary. They are not used
-      to identify you and are not sold or shared with anyone else.
+      costs, expenses, savings and what remains, plus the name of each of your top spending
+      categories and the total spent in it that month and the month before, along with your
+      currency and the month. Individual transactions — their names, dates and amounts — are
+      never sent. These figures pass through our server to OpenAI, which writes the summary.
+      Our server keeps the latest summary it produced for your anonymous identifier (see
+      below) for up to about 13 months. It uses that copy to show the summary again if you
+      ask before your next analysis is due, and to enforce the 30-day limit. Older summaries
+      are replaced. This data is not used to identify you, and it is not sold or shared with
+      anyone else.
     </li>
     <li>
       <strong>Anonymous sign-in.</strong> To make sure only the App can use our AI service,
       FullWallet signs your device in anonymously using Firebase Authentication. This
       produces an anonymous identifier. It is not linked to your name, email or any account,
       and it is not used to track you.
+    </li>
+    <li>
+      <strong>Advertising measurement (Meta).</strong> The App includes Meta’s SDK so we can
+      measure whether our ads lead to people installing and buying the App. It reports a
+      small set of events to Meta: that the App was installed and opened, that you finished
+      onboarding, that the Premium screen was shown, and that a Premium purchase was made,
+      with the product and its store price. Like any SDK that talks to a server, it also
+      sends basic technical information such as device model, operating system and app
+      version, and your IP address is visible to Meta. We do not ask for permission to track
+      you, so no advertising identifier is shared: the IDFA is never requested on iPhone, and
+      advertising ID collection is turned off on Android. Nothing you enter in the App —
+      transactions, amounts, categories, budgets or AI results — is ever sent to Meta. Meta
+      handles this data under <a href="https://www.facebook.com/privacy/policy/">Meta’s
+      Privacy Policy</a>.
     </li>
     <li>
       <strong>Currency exchange rates.</strong> If you record a transaction in a currency
@@ -99,18 +122,28 @@
       transaction, and it only listens while you are on the voice entry screen.
     </li>
     <li>
-      <strong>Purchases and subscriptions.</strong> These are processed by Apple or Google
-      and are subject to their respective privacy policies. FullWallet does not have access
-      to your payment details. The App stores only whether a subscription is currently active.
+      <strong>Purchases and subscriptions.</strong> Lifetime purchases and subscriptions are
+      processed by Apple or Google and are subject to their privacy policies. FullWallet
+      never has access to your payment details. The App stores only whether you currently
+      have Premium.
     </li>
   </ul>
 
   <h2>What We Do Not Do</h2>
   <ul>
-    <li>We do not use analytics or crash-reporting services.</li>
-    <li>We do not show advertising and we do not track you across apps or websites.</li>
+    <li>
+      We do not use crash-reporting or product-analytics services. The only usage events
+      sent anywhere are the Meta advertising events described above.
+    </li>
+    <li>
+      We do not show advertising in the App, we do not ask for permission to track you, and
+      we do not share an advertising identifier.
+    </li>
     <li>We do not sell or rent your information to anyone.</li>
-    <li>We do not require an account, and we have no server that holds your financial records.</li>
+    <li>
+      We do not require an account. Our server does not hold your financial records; the
+      only thing it keeps is your latest AI summary, as described above.
+    </li>
   </ul>
 
   <h2>Permissions</h2>
@@ -121,8 +154,10 @@
     </li>
     <li>
       <strong>Notifications</strong> — used to alert you when a budget is close to its limit
-      or has been passed. These notifications are created on your device; nothing is sent to
-      us, and we do not use push notifications.
+      or has been passed, to remind you to log your spending if you haven’t added anything
+      for a couple of days (you can turn this off in Settings), and on iPhone to confirm an
+      Apple Pay purchase that was logged automatically. These notifications are created on
+      your device; nothing is sent to us, and we do not use push notifications.
     </li>
   </ul>
   <p>
@@ -146,10 +181,11 @@
       and category you have created from your device.
     </li>
     <li>You can export a copy of your data before deleting anything.</li>
-    <li>You can manage or cancel subscriptions in your device’s account settings.</li>
+    <li>You can manage or cancel subscriptions in your App Store or Google Play account settings.</li>
     <li>
       Deleting the App removes all data stored locally on your device. Because that data is
-      only held on your device, deleting the App deletes it.
+      only held on your device, deleting the App deletes it. The latest AI summary held by
+      our server is deleted automatically after about 13 months.
     </li>
   </ul>
   <p>
