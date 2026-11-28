@@ -39,7 +39,7 @@
 <body>
 
   <h1>Privacy Policy</h1>
-  <p><strong>Last updated:</strong> 2026-11-24</p>
+  <p><strong>Last updated:</strong> 2026-11-28</p>
 
   <h2>Overview</h2>
   <p>
@@ -94,18 +94,36 @@
       and it is not used to track you.
     </li>
     <li>
-      <strong>Advertising measurement (Meta).</strong> The App includes Meta’s SDK so we can
-      measure whether our ads lead to people installing and buying the App. It reports a
-      small set of events to Meta: that the App was installed and opened, that you finished
-      onboarding, that the Premium screen was shown, and that a Premium purchase was made,
-      with the product and its store price. Like any SDK that talks to a server, it also
-      sends basic technical information such as device model, operating system and app
-      version, and your IP address is visible to Meta. We do not ask for permission to track
-      you, so no advertising identifier is shared: the IDFA is never requested on iPhone, and
-      advertising ID collection is turned off on Android. Nothing you enter in the App —
-      transactions, amounts, categories, budgets or AI results — is ever sent to Meta. Meta
-      handles this data under <a href="https://www.facebook.com/privacy/policy/">Meta’s
-      Privacy Policy</a>.
+      <strong>Earlier versions: advertising measurement (Meta).</strong> From version 1.0.3
+      to version 1.0.8, the App included Meta’s SDK so we could measure whether our ads led
+      to installs and purchases. It was removed in version 1.0.9, and from that version on
+      nothing is sent to Meta. In those earlier versions it reported a small set of events:
+      that the App was installed and opened, that you finished onboarding, that the Premium
+      screen was shown, and that a Premium purchase was made, with the product and its store
+      price. Like any SDK that talks to a server, it also sent basic technical information
+      such as device model, operating system and app version, and your IP address was
+      visible to Meta. No advertising identifier was shared: the IDFA was never requested on
+      iPhone, and advertising ID collection was turned off on Android. Nothing you enter in
+      the App — transactions, amounts, categories, budgets or AI results — was ever sent to
+      Meta. Meta handles that data under
+      <a href="https://www.facebook.com/privacy/policy/">Meta’s Privacy Policy</a>. To stop
+      it, update the App.
+    </li>
+    <li>
+      <strong>Purchase analytics (PostHog).</strong> From version 1.0.10, to understand
+      where people choose Premium, the App sends a few anonymous events to PostHog, an
+      analytics service, on its servers in the European Union: that the Premium screen was
+      shown and where it was opened from (for example onboarding or Settings), that a
+      purchase was started, and that it went through, with the plan (monthly or Lifetime)
+      and whether it began with a free trial. Each install gets a random identifier created
+      by the App. It is not linked to your name, email, your anonymous sign-in or any
+      advertising identifier, and it is not used to track you across other apps or
+      websites. Like any service that talks to a server, PostHog also receives basic
+      technical information such as device model, operating system and app version, and
+      your IP address is visible to it when events are sent; we do not use it to work out
+      your location. Nothing you enter in the App — transactions, amounts, categories,
+      budgets or AI results — is ever sent to PostHog. PostHog handles this data under
+      <a href="https://posthog.com/privacy">PostHog’s Privacy Policy</a>.
     </li>
     <li>
       <strong>Currency exchange rates.</strong> If you record a transaction in a currency
@@ -132,8 +150,9 @@
   <h2>What We Do Not Do</h2>
   <ul>
     <li>
-      We do not use crash-reporting or product-analytics services. The only usage events
-      sent anywhere are the Meta advertising events described above.
+      We do not use crash-reporting or advertising SDKs, and the only analytics are the
+      PostHog purchase events described above. (Versions 1.0.3 to 1.0.8 sent the Meta
+      events described above.)
     </li>
     <li>
       We do not show advertising in the App, we do not ask for permission to track you, and
